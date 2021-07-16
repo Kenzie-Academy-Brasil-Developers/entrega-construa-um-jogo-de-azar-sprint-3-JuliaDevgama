@@ -11,12 +11,12 @@
     border:0;
     font-family: var(--font);
     }
-
+    
     .container {
         text-align: center;
         border-radius: 40px 40px 40px 40px;
-        box-shadow: 5px 5px 10px -1px #5C819E
-        ;
+        box-shadow: 5px 5px 10px -1px #5C819E;
+        margin: 30px;
 
     }
     img{
@@ -26,6 +26,53 @@
         left: 45%;
     }
     
-    .container__imgs img {
-        margin-bottom: 10px;
+    .container__imgs{
+        display: flex;
+        position: relative;
+        right: 50px;
+        padding: 20px;
     }
+    span{
+        font-weight: bold;
+        padding: 10px;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #jogar, #reset{
+        border-radius: 20px;
+        border: none;
+        width: 25%;
+        position: relative;
+        left: 38%;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #jogar:hover, #reset:hover {
+        background: rgb(226, 224, 224);
+
+    }
+
+    @media (min-width:769px){
+        .area-gamer {
+            width: 90vw;
+            margin-left: 60px;
+        }
+        .container {
+            padding: 20px;
+            width: 60vw;
+            margin-left: 15%;
+        }
+        .container__imgs {
+            margin-left: 3%;
+        }
+        #jogar:hover, #reset:hover {
+            background: rgb(173, 200, 235);
+        }
+    }
+
